@@ -1,0 +1,157 @@
+body{
+    /* background:linear-gradient(to righT,#B3D9FF,white) !important;  */
+    background-image: url(simtek_img/Petition-for-implementation-of-the-Deviation-Settlement-Mechanism..jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.navbar{
+    background:linear-gradient(to right,#00308F,#B3D9FF) !important;
+}
+
+.nav-link{
+    color: white !important;
+    font-weight: bold !important;
+}
+.nav-link:hover{
+    background-color: white !important;
+    color: #00308F !important;
+    border-radius: 10px !important;
+}
+.special{
+    background-color: white !important;
+    color: #00308F !important;
+    border-radius: 10px !important;
+}
+.dropdown-item{
+    background:linear-gradient(to right,#00308F,#B3D9FF) !important;
+   color: white !important; 
+   font-weight: bold !important;
+
+}
+.dropdown-item:hover{
+    text-decoration: underline !important;
+}
+
+.navbar-toggler{
+    background-color: #B3D9FF !important;
+}
+.center{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.footers{
+    background-color: #00308F ;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.first,.second{
+    display: flex;
+    width: 400px;
+    color:white ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.third{
+    display: flex;
+    width: 400px;
+    color:white ;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:600px){
+    .first,.second,.third{
+        width: 100%;
+    }
+}
+.facilities{
+    width: 100%;
+}
+.contact{
+    margin-left: 20px;
+}
+
+
+/* ////////////////////////////////////////// */
+
+.heading{
+    text-align: center;
+    color:#00308F ;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+.mainCard{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card1{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px 0px 5px;
+    border: 2px solid #00308F;
+    border-radius: 20px;
+    height: 280px;
+}
+.pic{
+    height: 250px;
+    width: 200px;
+}
+.occ{
+    padding: 20px 0px 0px 12px;
+    height: 250px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #00308F;
+}
+
+.mem{
+    height: 250px;
+    width: 200px;
+}
+
+.simlogo{
+    margin-left:60px; 
+    width:150px;
+    height:100px;
+}
+
+@media screen and (max-width:600px){
+    .card1{
+        width:340px ;
+        height: 190px ;
+    }
+    .pic{
+        width:120px ;
+        height: 170px;
+    }
+    .occ{
+        width:220px ;
+        height: 170px;
+    }
+    .mem{
+        width:120px ;
+        height: 170px;
+    }
+    .simlogo{
+        margin-left:0px; 
+        width:0px;
+        height:0px;
+    }
+} 
+
