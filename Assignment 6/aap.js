@@ -55,3 +55,85 @@
 // var str=num.toString().replace(".","");
 // document.write("Number: "+num+"<br>")
 // document.write("Result: "+str);
+//TASK 13:
+// var username=prompt("Enter your username:");
+// var a=0;
+// for(var i=0;i<username.length;i++){
+//     if(username[i]==="!" || username[i]==="," || username[i]==="." || username[i]==="@"){
+//         alert("Please enter a valid username!");
+//         a=1;
+//         break;
+//     }
+// }
+// if(a===0){
+//     alert("Valid username")
+// }
+//TASK 14:
+// var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var order =prompt("Welcome to ABC bakery! What do yo want to order Sir/Ma'am").toLowerCase();
+// var i = arr.indexOf(order);
+// if(i===-1){
+//     document.write("We are sorry "+order+" is <b>not available</b> in our bakery")
+// } 
+// else{
+//     document.write(order+" is <b>available</b> at index "+i+" in our bakery");
+// }
+//TASK 15:
+// var pass=prompt("Enter a Password:");
+// var alpha=0;
+// var num=0;
+// if(pass[0]>=0 && pass[0]<=9){
+//     alert("Password cannot begin with a number\nPlease enter a valid password");
+// }
+// else{
+//     if(pass.length<6){
+//         alert("Password must at least 6 characters long\nPlease enter a valid password");
+//     }
+//     else{
+//         for(var i=0;i<pass.length;i++){
+//             if((pass[i]>="a" && pass[i]<="z") || (pass[i]>="A" && pass[i]<="Z")){
+//                 alpha=1;
+//                 break;
+//             }
+//         }
+//         if(alpha===1){
+//             for(var i=0;i<pass.length;i++){
+//                 if(Number(pass[i])>=0 && Number(pass[i])<=9){
+//                     num=1;
+//                     break;
+//                 }
+//             }
+//             if(num===1){
+//                 alert("Valid Password");
+//             }
+//             else{
+//                 alert("Password must contain alphabets and numbers both\nPlease enter a valid password");  
+//             }
+//         }
+//         else{
+//             alert("Password must contain alphabets and numbers both\nPlease enter a valid password");  
+//         }
+//     }
+// }
+//TASK 16:
+// var university = "University of Karachi";
+// var arr = university.split("");
+// for(var i=0;i<arr.length;i++){
+//     document.write(arr[i]+"<br>");
+// } 
+//TASK 17:
+// var input=prompt("Enter a string:");
+// var last=input[input.length-1];
+// document.write("User input: "+input+"<br>");
+// document.write("Last character of input: "+last);
+//TASK 18:
+// var str="The quick brown fox jumps over the lazy dog.";
+// var count=0;
+// for(var i=0;i<str.length;i++){
+//     if(str.slice(i,i+3).toLowerCase()==="the"){
+//         count+=1;
+//     }
+// }
+// document.write("Text: "+str+"<br>");
+// document.write("There are "+count+" occurrence(s) of the word 'the'.");
+
