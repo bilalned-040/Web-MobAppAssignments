@@ -137,3 +137,64 @@
 // document.write("Text: "+str+"<br>");
 // document.write("There are "+count+" occurrence(s) of the word 'the'.");
 
+
+
+
+
+
+
+
+//                                                  CHAPTER 26-30:
+//TASK 1:
+// var integer=Number(prompt("Enter a positive integer:"));
+// var rOff=Math.round(integer);
+// var flooring=Math.floor(integer);
+// var ceiling=Math.ceil(integer);
+// document.write("Number: "+integer+"<br>Round Off value: "+rOff+"<br>Floor value: "+flooring+"<br>Ceil Value: "+ceiling);
+//TASK 2:
+// var integer=Number(prompt("Enter a negative integer:"));
+// var rOff=Math.round(integer);
+// var flooring=Math.floor(integer);
+// var ceiling=Math.ceil(integer);
+// document.write("Number: "+integer+"<br>Round Off value: "+rOff+"<br>Floor value: "+flooring+"<br>Ceil Value: "+ceiling);
+//TASK 3:
+// var num=Number(prompt("Enter any integer:"));
+// var absolute=Math.abs(num);
+// document.write("The absolute value of "+num+" is "+absolute);
+//TASK 4:
+// var dice=Math.floor((Math.random() * 6) + 1);
+// document.write("Random dice value: "+dice);
+//TASK 5:
+// var coin=Math.floor((Math.random() * 2) + 1);
+// if(coin===1){
+//     coinValue="Tails"
+//     document.write(coin+"<br>Random coin value: "+coinValue);
+// }
+// else{
+//     coinValue="Heads"
+//     document.write(coin+"<br>Random coin value: "+coinValue);
+// }
+//TASK 6:
+// var ran=Math.floor((Math.random() * 100) + 1);
+// document.write("Random number between 1 and 100: "+ran);
+//TASK 7:
+// var weight=prompt("Enter your weight");
+// var parsed="";
+// for(var i=0; i<weight.length; i++){
+//     if(weight[i]>=0 && weight[i]<=9 && weight[i]!=" " || weight[i]==="."){
+//         parsed=parsed+weight[i];
+//     }
+// }
+// document.write("The weight of user is "+parsed+" Kilograms.");
+//TASK 8:
+// var secretNum = Math.floor((Math.random() * 10) + 1);
+// var input = +prompt("Guess the number between 1 to 10 : ");
+
+// if(input===secretNum){
+//     alert("Congratulation you guess correct number");
+// }
+// else{
+//     alert("Sorry try again");
+// }
+
+
