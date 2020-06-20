@@ -198,3 +198,110 @@
 // }
 
 
+
+
+
+
+
+//                                                  CHAPTER 31-34:
+//TASK 1:
+// var date = new Date();
+// document.write(date);
+//TASK 2:
+// var monArray=["January","February","March","April","May","June","July","August","September","October","November","December"];
+// var monIndex = (new Date()).getMonth();
+// var monCurrent = monArray[monIndex];
+// document.write("Current month : "+monCurrent);
+//TASK 3:
+// var daysArray = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+// var date= new Date();
+// var dayIndex = date.getDay();
+// var currentDay = daysArray[dayIndex];
+// alert("Today is "+currentDay);
+//TASK 4:
+// var date=new Date();
+// var dayIndex=date.getDay();
+// if(dayIndex===0 || dayIndex===6){
+//     alert("Its Fun day");
+// }
+// else{
+//     alert("Not a fun day");
+// }
+//TASK 5:
+// var date= new Date();
+// var CurrentDate = date.getDate();
+// if(CurrentDate <= 15){
+//     alert("first 15 days of month")
+// }
+// else{
+//     alert("last days of month")
+// }
+//TASK 6:
+// var date= new Date();
+// var timeMilli = date.getTime();
+// var timeMin = timeMilli/(1000*60);
+// document.write("Current date: "+date+"<br>");
+// document.write("Elapsed milliseconds since January 1, 1970: "+timeMilli+"<br>");
+// document.write("Elapsed minutes since January 1, 1970: "+timeMin+"<br>");
+//TASK 7:
+// var hour = new Date().getHours();
+// if(hour<=11){
+//     alert("It's AM");
+// }
+// else{
+//     alert("It's PM");
+// }
+//TASK 8:
+// var laterDate = new Date("Dec 31, 2020");
+// alert(laterDate);
+//TASK 9:
+// var ramadan1st = new Date("Apr 25, 2020");
+// var ramadan1stDays = (ramadan1st.getTime())/(1000*60*60*24);
+// var currentDate = new Date();
+// var currentDays = (currentDate.getTime())/(1000*60*60*24);
+// var diff = (currentDays - ramadan1stDays).toFixed(0) ;
+// alert(diff + " days have passed since 1st Ramadan, 2020");
+//TASK 10:
+// var begin2015=new Date("Jan 1, 2015");
+// var begin2015sec=(begin2015.getTime())/1000;
+// var todayDate = new Date();
+// var todaySec = (todayDate.getTime())/1000;
+// var diff = (todaySec-begin2015sec).toFixed(0);
+// alert("On reference date "+todayDate+", "+diff+" seconds have passed since begining of 2015")
+//TASK 11:
+// var date = new Date();
+// var hour=date.getHours();
+// document.write("Current date: "+date+"<br>");
+// date.setHours(hour-1);
+// document.write("1 hour ago, it was "+date+"<br>");
+//TASK 12:
+// var date = new Date();
+// var year=date.getFullYear();
+// alert(year)
+// document.write("Current date: "+date+"<br>");
+// date.setFullYear(year-100);
+// document.write("100 years back, it was "+date+"<br>");
+//TASK 13:
+// var age=+prompt("Enter your age:");
+// var today = new Date();
+// var todayYear=today.getFullYear();
+// var birthYear=todayYear-age;
+// document.write("Your age is "+age+"<br>");
+// document.write("your bith year is "+birthYear);
+//TASK 14:
+// var customerName = "ABC customer"
+// var monthsArray=["January","February","March","April","May","June","July","August","September","October","November","December"];
+// var currentMonth = monthsArray[new Date().getMonth()];
+// var numberOfUnits = 410;
+// var chargesPerUnit = 16;
+// var netAmountPayable = numberOfUnits*chargesPerUnit; 
+// var latePaymentSurcharge = 350;
+// var grossAmountPayable = netAmountPayable+latePaymentSurcharge;
+// document.write("<h1>K Electric Bill</h1><br>");
+// document.write("Customer Name: "+customerName+"<br>");
+// document.write("Current Month: "+currentMonth+"<br>");
+// document.write("Number of units: "+numberOfUnits+"<br>");
+// document.write("Charges per unit: "+chargesPerUnit+"<br><br>");
+// document.write("Net Amount Payable(within Due Date): "+netAmountPayable+"<br>");
+// document.write("Late Payment Surcharge: "+latePaymentSurcharge+"<br>");
+// document.write("Gross Amount Payable(after Due Date): "+grossAmountPayable+"<br>");
