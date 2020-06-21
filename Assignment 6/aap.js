@@ -305,3 +305,191 @@
 // document.write("Net Amount Payable(within Due Date): "+netAmountPayable+"<br>");
 // document.write("Late Payment Surcharge: "+latePaymentSurcharge+"<br>");
 // document.write("Gross Amount Payable(after Due Date): "+grossAmountPayable+"<br>");
+
+
+
+
+
+
+
+//                                                  CHAPTER 35-38:
+//TASK 1:
+// function showDate(){
+//     var currentDate = new Date();
+//     document.write("<h3>"+currentDate+"</h3>");
+// }
+// showDate();
+//TASK 2:
+// function greet(){
+//     var fname=prompt("Enter your first name:");
+//     var lname=prompt("Enter your last name:");
+//     alert("Welcome "+fname+" "+lname);
+// }
+// greet();
+//TASK 3:
+// function add(){
+//     var fnum=+prompt("Enter first number:");
+//     var snum=+prompt("Enter second number:");
+//     return fnum+snum;
+// }
+// alert("Sum of two numbers is: "+add());
+//TASK 4:
+// function calculator(){
+//     var a = +prompt("Enter your first operand : ");
+//     var b = +prompt("Enter your second operand : ");
+//     var c = prompt("Enter your operation (+,-,*,/) : ");
+//     if(c === "+"){
+//         return(a+b);
+//     } 
+//     else if(c === "-"){
+//         return(a-b);
+//     }    
+//     else if(c === "*"){
+//         return(a*b);
+//     }    
+//     else if(c === "/"){
+//         return(a/b);
+//     }
+//     else{
+//         return("Invalid Operation");
+//     }
+// }
+// alert("Required Result: "+calculator());
+//TASK 5:
+// function square(num){
+//     return Math.pow(num,2);
+// }
+// var num = +prompt("Enter a number to calculate its square : ");
+// alert("The square of "+num+" is "+square(num));
+//TASK 6:
+// function factorial(num){
+//     var f=1;
+//     if(num>0)
+//     {
+//         for(var i=num ; i>0 ;i--){
+//             f=f*i;
+//         }
+//         return(f);
+//     }
+//     if(num===0){
+//         return(1);
+//     }
+//     else{
+//         return("Invalid input");
+//     }
+// }
+// var a = +prompt("Enter a number to calculate its factorial : ");
+// alert("The factorial of "+a+" is "+factorial(a));
+//TASK 7:
+// function count(){
+//     var start=+prompt("Enter starting number:");
+//     var end=+prompt("Enter ending number:");
+//     if(start<end){
+//         for(var i=start;i<=end;i++)
+//         {
+//             document.write(i+" ")
+//         }
+//     }
+//     else{
+//         for(var i=start;i>=end;i--)
+//         {
+//             document.write(i+" ")
+//         }
+//     }
+// }
+// count();
+//TASK 8:
+// function calculateHypotenuse(){
+//     function  calculateSquare(num){
+//         return Math.pow(num,2);
+//     }
+//     var base=+prompt("Enter base value:");
+//     var perp=+prompt("Enter perpendicular value:");
+//     var hyp=Math.sqrt(calculateSquare(base)+calculateSquare(perp));
+//     return hyp
+// }
+// alert("Hypotenuse: "+calculateHypotenuse());
+//TASK 9:
+// function area(width,height){
+//     return(width*height);
+// }
+// var area1 = area(6,9);
+// alert("Area = "+area1);
+
+// var a = +prompt("Enter your heigh : ");
+// var b = +prompt("Enter your width : ");
+// var area2 = area(a,b);
+// alert("Area = "+area2);
+//TASK 10:
+// function palindrome(word){
+//     var word1="";
+
+//     for(var i=word.length-1;i>=0;i--){
+//         word1+=word[i];
+//     }
+//     if(word===word1){
+//         alert("string is palindrome");
+//     }
+//     else{
+//         alert("string is not a palindrome");
+//     }
+// }
+// var str=prompt("Enter a string: ");
+// palindrome(str);
+//TASK 11:
+// function toTitleCase(string){
+//     string=string[0].toUpperCase() +string.slice(1).toLowerCase();
+//     for(var i=0;i<string.length;i++){
+//         if(string[i]===" "){
+//             string=string.slice(0,i+1)+string[i+1].toUpperCase()+string.slice(i+2);
+//         }
+//     }
+//     return(string);
+// }
+// var a = prompt("Enter a string : ");
+// alert(toTitleCase(a));
+//TASK 12:
+// function longestWord(str)
+// {
+//     var array = str.split(" ")
+//     var longestWord=array[0];
+//     for(var i=0; i<array.length; i++)
+//     {
+//         if(array[i].length>longestWord.length){
+//             longestWord=array[i];
+//         }
+//     }
+//     return(longestWord);
+// }
+
+// var str = prompt("Enter a string : ");
+// alert("Longest word is "+longestWord(str));
+//TASK 13:
+// function count(string,character)
+// {
+//     var count=0
+//     for(var x=0; x<string.length; x++){
+//         if(string[x]===character){
+//             count++
+//         }
+//     }
+//     return(count)
+// }
+// var a =prompt("Enter a string:");
+// var b =prompt("Enter a letter");
+// var c = count(a,b)
+// alert("Count of occurance of "+b+" in "+a+ " is "+c);
+//TASK 14:
+// function calcCircumference(radius){
+//     var circumference = 2*3.142*radius;
+//     return("The circumference is "+circumference.toFixed(2));
+// }
+// function calcArea(radius){
+//     var area = 3.142*radius*radius;
+//     return("The area is "+area.toFixed(2));
+// }
+
+// var r = +prompt("Enter radius of circle");
+// document.write(calcCircumference(r)+"<br>");
+// document.write(calcArea(r)+"<br>");
+
