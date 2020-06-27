@@ -1,6 +1,6 @@
 .cal-body{
-    width: 300px;
-    height: 480px;
+    width: 240px;
+    height: 380px;
     background-color: #555555;
     margin: 0 auto;
     border: 8px solid black;
@@ -17,22 +17,23 @@
 #output-value{
     width: 92%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     background-color: #555555;
-    height: 80px;
+    height: 60px;
     font-size: 40px;
     color: white;
     text-align: right;
 }
 
 .operator, .number, .empty{
-    width: 52px;
-    height: 52px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
     border-radius: 50%;
     border-width: 0;
     font-size: 20px;
     font-weight: bold;
+    float: left;
 }
 
 .operator{
