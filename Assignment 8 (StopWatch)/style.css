@@ -1,0 +1,33 @@
+body{
+    background-color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 80px;
+}
+.container{
+    color:#19FFFF ;
+}
+.fa{
+    color:#19FFFF ;
+    font-size: 50px;
+}
+button{
+    background-color: black;
+}
+.size{
+    font-size: 80px;
+}
+
+@media only screen and (max-width: 450px){
+    .size{
+        font-size: 30px;
+    }
+    .fa{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
