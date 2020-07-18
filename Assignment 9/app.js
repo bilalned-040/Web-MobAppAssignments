@@ -288,48 +288,74 @@
 //     para.innerHTML="I am Muhammad Bilal Hanif, currently doing software Engineering from NEDUET."
 // }
 //TASK 3:
-var val1=document.getElementById("val1");
-var val2=document.getElementById("val2");
-var table = document.getElementById("myTable");
+// var val1=document.getElementById("val1");
+// var val2=document.getElementById("val2");
+// var table = document.getElementById("myTable");
 
-function add(){
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
+// function add(){
+//     var row = table.insertRow(1);
+//     var cell1 = row.insertCell(0);
+//     var cell2 = row.insertCell(1);
+//     var cell3 = row.insertCell(2);
+//     var cell4 = row.insertCell(3);
 
-    cell1.innerHTML = val1.value;
-    cell2.innerHTML = val2.value;
-    var p = document.createElement("p");
-    var text=document.createTextNode("Delete");
-    p.appendChild(text);
-    p.setAttribute("onclick","deleteRow(this)");
-    cell3.appendChild(p);
-    var p1 = document.createElement("p");
-    var text1=document.createTextNode("Edit");
-    p1.appendChild(text1);
-    p1.setAttribute("onclick","editRow(this)");
-    cell4.appendChild(p1);
-    val1.value="";
-    val2.value="";
-}
-function deleteRow(r) {
-        var i = r.parentNode.parentNode.rowIndex;
-        document.getElementById("myTable").deleteRow(i); 
-      }
-function editRow(r){
-    window.i = r.parentNode.parentNode.rowIndex;
-    window.update=document.getElementById("update");
-    update.style.display="block";
-    var val3=document.getElementById("val3");
-    var val4=document.getElementById("val4");
-    val3.value=document.getElementById("myTable").rows[i].cells.item(0).innerHTML;
-    val4.value=document.getElementById("myTable").rows[i].cells.item(1).innerHTML;
+//     cell1.innerHTML = val1.value;
+//     cell2.innerHTML = val2.value;
+//     var p = document.createElement("p");
+//     var text=document.createTextNode("Delete");
+//     p.appendChild(text);
+//     p.setAttribute("onclick","deleteRow(this)");
+//     cell3.appendChild(p);
+//     var p1 = document.createElement("p");
+//     var text1=document.createTextNode("Edit");
+//     p1.appendChild(text1);
+//     p1.setAttribute("onclick","editRow(this)");
+//     cell4.appendChild(p1);
+//     val1.value="";
+//     val2.value="";
+// }
+// function deleteRow(r) {
+//         var i = r.parentNode.parentNode.rowIndex;
+//         document.getElementById("myTable").deleteRow(i); 
+//       }
+// function editRow(r){
+//     window.i = r.parentNode.parentNode.rowIndex;
+//     window.update=document.getElementById("update");
+//     update.style.display="block";
+//     var val3=document.getElementById("val3");
+//     var val4=document.getElementById("val4");
+//     val3.value=document.getElementById("myTable").rows[i].cells.item(0).innerHTML;
+//     val4.value=document.getElementById("myTable").rows[i].cells.item(1).innerHTML;
    
-}
-function edit(){
-    document.getElementById("myTable").rows[i].cells.item(0).innerHTML=val3.value;
-    document.getElementById("myTable").rows[i].cells.item(1).innerHTML=val4.value;
-    update.style.display="none";
-    }
+// }
+// function edit(){
+//     document.getElementById("myTable").rows[i].cells.item(0).innerHTML=val3.value;
+//     document.getElementById("myTable").rows[i].cells.item(1).innerHTML=val4.value;
+//     update.style.display="none";
+//     }
+
+
+
+
+
+
+
+//                                              CHAP: 52-57
+//TASK 1:
+// function image(id){
+//     var src=document.getElementById(id);
+//     var srcM=src.getAttribute("src")
+//     var modal = document.getElementById('modal');
+//     modal.classList.add('modal-open')
+//     modal.classList.remove('modal-close');
+//     modal.style.display="block";
+//     var modalimg=document.getElementById("modal-img");
+//     modalimg.setAttribute("src",srcM)
+// }
+
+// function onClosedImagModal(){
+//     var modal = document.getElementById('modal');
+//     modal.classList.add('modal-close')
+//     modal.classList.remove('modal-open'); 
+//     setTimeout(()=>{ modal.style.display = "none"; }, 550)
+// }
