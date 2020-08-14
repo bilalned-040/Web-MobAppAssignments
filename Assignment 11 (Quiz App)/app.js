@@ -4,53 +4,53 @@ window.onload=function(){
 
 var questions = [
     {
-        q:"Q: Whats your age?",
-        ans:"20",
+        q:"Q: What is the capital city of Pakistan?",
+        ans:"Islamabad",
         options:[
-            "18",
-            "19",
-            "20",
-            "21"
+            "Lahore",
+            "Rawalpndi",
+            "Islamabad",
+            "Karachi"
         ]
     },
     {
-        q:"Q: Whats your sis age?",
-        ans:"17",
+        q:"Q: What does Pakistan means in Urdu?",
+        ans:"Land of the pure",
         options:[
-            "17",
-            "19",
-            "20",
-            "21"
+            "Land of the mighty",
+            "Land of gold",
+            "Land of wealth",
+            "Land of the pure"
         ]
     },
     {
-        q:"Q: Whats your bro age?",
-        ans:"24",
+        q:"Q: Which of these is an official language of the country?",
+        ans:"Urdu",
         options:[
-            "18",
-            "19",
-            "20",
-            "24"
+            "Urdu",
+            "English",
+            "Arabic",
+            "Turkish"
         ]
     },
     {
-        q:"Q: Whats your father's age?",
-        ans:"59",
+        q:"Q: Who is the current Prime Minister of Pakistan?",
+        ans:"Imran Khan",
         options:[
-            "18",
-            "59",
-            "20",
-            "24"
+            "Nawaz Sharif",
+            "Arif Alvi",
+            "Imran Khan",
+            "None"
         ]
     },
     {
-        q:"Q: Whats your mom's age?",
-        ans:"none",
+        q:"Q: Who is not the CM of Pakistan's provinces?",
+        ans:"None",
         options:[
-            "18",
-            "19",
-            "20",
-            "none"
+            "Usman Buzdar",
+            "Jam Kamal Khan",
+            "Murad Ali Shah",
+            "None"
         ]
     }
 ]
@@ -63,9 +63,30 @@ var ques = document.getElementById("ques");
 var mark = document.getElementById("mark")
 
 function next(){
+    if(questions_count<=4){
+        scoring(questions_count)
+    }
     questions_count++;
     check(questions_count);
 }
+
+function scoring(e){
+    var Radios1=document.getElementById("Radios1");
+    var Radios2=document.getElementById("Radios2");
+    var Radios3=document.getElementById("Radios3");
+    var Radios4=document.getElementById("Radios4");
+    var array=[Radios1,Radios2,Radios3,Radios4];
+    
+    for(var i=0;i<=3;i++){
+        if(array[i].nextSibling.innerHTML===questions[e].ans){
+            if(array[i].checked){
+                points++;
+            }
+        }
+    }
+}
+
+
 function check(e){
     if(e>5){
         alert("Quiz has been completed") 
@@ -76,11 +97,18 @@ function check(e){
     else if(e==5){
         score();
     }
+
 }
+
+
+
 function score(){
     ques.innerHTML="Your Score: "+points+"/5";
     mark.innerHTML="";
 }
+
+
+
 function show(e){
     var opt1=document.getElementById("opt1");
     var opt2=document.getElementById("opt2");
